@@ -1,0 +1,25 @@
+<script>
+	
+	let correct = 0;
+	let incorrect = 0;
+	
+	let checkQuestions = () =>{
+		for(let i = 0; i < 12;i++){
+			
+			let numberOne = parseInt(Math.random() * 10);
+			let numberTwo = parseInt(Math.random() * 10);
+			let question = +prompt(`How to much will: ${numberOne} * ${numberTwo}`);
+			
+			if(question == (numberOne * numberTwo)){
+				correct++;
+			}else{
+				incorrect++;
+			}
+		};
+		
+		alert(`Correct: ${correct}, incorrect: ${incorrect}`);
+	};
+	
+	checkQuestions();
+	
+</script>
